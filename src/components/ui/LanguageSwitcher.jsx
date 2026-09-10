@@ -26,7 +26,7 @@ function LanguageSwitcher() {
         onClick={() => setOpen((previousState) => !previousState)}
         aria-expanded={open}
         aria-haspopup="listbox"
-        className="flex w-33.75 items-center justify-between gap-2 rounded-full border border-white/30 px-3 py-2 text-white"
+        className="flex w-fit items-center justify-between gap-2 rounded-full border border-white/30 px-3 py-2 text-white"
       >
         <img
           src="/flags/uk.png"
@@ -34,7 +34,7 @@ function LanguageSwitcher() {
           className="size-5 object-cover object-center"
         />
 
-        <span className="text-[13px] font-semibold">English</span>
+        <span className="lg:text-[13px] md:text-[12px] font-semibold">English</span>
 
         <svg
           aria-hidden="true"

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { X } from "lucide-react";
 import { useState } from "react";
 import LanguageSwitcher from "./LanguageSwitcher";
+import Image from "next/image";
 
 const navLinks = [
     { href: "/", label: "Home" },
@@ -17,12 +18,17 @@ function Humburger() {
     const [open, setOpen] = useState(false);
 
     return (
-        <div className="relative flex justify-between items-center px-2 py-4 bg-(--bg-primary)">
+        <div className="container relative flex items-center justify-between border-b border-white/10 bg-[#021F43] px-4 py-1 shadow-[0_4px_20px_rgba(0,20,50,0.18)] md:hidden">
             {/* Logo */}
-            <Link href="/" className="logo">
-                <h2 className="uppercase text-2xl! font-semibold">
-                    CloudForge
-                </h2>
+            <Link href="/" className="logo text-white">
+                <Image
+                    src="/logos/logo.svg"
+                    alt="Logo"
+                    loading="eager"
+                    width={828}
+                    height={828}
+                    className="w-15 h-auto object-cover"
+                />
             </Link>
 
             {/* Hamburger Button */}
@@ -31,79 +37,75 @@ function Humburger() {
                 onClick={() => setOpen(true)}
                 aria-label="Open mobile menu"
                 aria-expanded={open}
-                className="humburger flex flex-col gap-2 p-3 bg-(--bg-theme) rounded-md overflow-hidden"
+                className="humburger flex cursor-pointer flex-col gap-1.5 overflow-hidden rounded-md border border-white/15 bg-white/5 p-3 transition-colors hover:border-[#078CFF]/60 hover:bg-white/10"
             >
-                <span className="inline-block w-7 h-0.5 bg-(--bg-primary) rounded-full" />
+                <span className="inline-block h-[0.3] w-5 rounded-full bg-[#078CFF]" />
 
                 <span
-                    className={`inline-block h-0.5 bg-(--bg-primary) rounded-full transition-all duration-200 ${
-                        open ? "w-7" : "w-4"
-                    }`}
+                    className={`inline-block h-[0.3] rounded-full bg-[#078CFF] transition-all duration-200 ${open ? "w-5" : "w-3"
+                        }`}
                 />
 
-                <span className="inline-block w-7 h-0.5 bg-(--bg-primary) rounded-full" />
+                <span className="inline-block h-[0.3] w-5 rounded-full bg-[#078CFF]" />
             </button>
 
             {/* Mobile Navigation */}
             <nav
                 aria-label="Mobile navigation"
-                className={`fixed top-0 right-0 z-999 w-full h-screen flex justify-end backdrop-blur-[2px] transition-transform duration-500 ${
-                    open ? "translate-x-0" : "translate-x-full"
-                }`}
+                className={`fixed right-0 top-0 z-999 flex h-screen w-full justify-end bg-[#00152e]/60 backdrop-blur-sm transition-all duration-500 ${open
+                    ? "visible translate-x-0 opacity-100"
+                    : "invisible translate-x-full opacity-0"
+                    }`}
             >
-                <div className="w-[70%] h-screen p-6 bg-(--bg-theme) text-(--text-primary)">
+                <div className="h-screen w-[82%] border-l border-white/10 bg-linear-to-b from-[#021F43] to-[#00376F] px-4 py-2 text-white shadow-[-16px_0_50px_rgba(0,15,40,0.35)] sm:w-[65%]">
                     {/* Mobile Header */}
-                    <div className="flex justify-between items-center">
+                    <div className="flex items-center justify-between">
                         <Link
                             href="/"
                             className="logo"
                             onClick={() => setOpen(false)}
                         >
-                            <h2 className="font-semibold uppercase text-[18px]! text-[#f1f1f1]">
-                                CloudForge
-                            </h2>
+                            <Image
+                                src="/logos/logo.svg"
+                                alt="Logo"
+                                loading="eager"
+                                width={828}
+                                height={828}
+                                className="w-15 h-auto object-cover"
+                            />
                         </Link>
 
                         <button
                             type="button"
                             onClick={() => setOpen(false)}
                             aria-label="Close mobile menu"
-                            className="cursor-pointer"
+                            className="grid size-10 cursor-pointer place-items-center text-white transition-colors "
                         >
                             <X
-                                className="w-9 h-9"
-                                strokeWidth={1.25}
+                                className="size-8"
+                                strokeWidth={1.75}
                             />
                         </button>
                     </div>
 
-                    <div className="w-full h-[0.5px] bg-(--text-primary) my-5" />
+                    <div className="my-5 h-px w-full bg-white/15" />
 
                     {/* Navigation Links */}
-                    <ul className="flex flex-col gap-2">
+                    <ul className="flex flex-col gap-1">
                         {navLinks.map((link, i) => (
                             <li
                                 key={link.href}
-                                className="font-semibold text-[18px] py-2 overflow-hidden"
+                                className="overflow-hidden border-b border-white/8 text-[17px] font-semibold"
                             >
                                 <Link
                                     href={link.href}
                                     onClick={() => setOpen(false)}
-                                    className={`
-                                        inline-block
-                                        transition-all
-                                        duration-700
-                                        ease-out
-                                        ${
-                                            open
-                                                ? "translate-y-0 opacity-100"
-                                                : "-translate-y-24 opacity-0"
-                                        }
-                                    `}
+                                    className={`block rounded-md px-3 py-3.5 tracking-wide text-white/85 transition-all duration-700 ease-out hover:bg-white/8 hover:pl-5 hover:text-[#42A5FF] ${open
+                                        ? "translate-y-0 opacity-100"
+                                        : "-translate-y-24 opacity-0"
+                                        }`}
                                     style={{
-                                        transitionDelay: open
-                                            ? `${i * 80}ms`
-                                            : "0ms",
+                                        transitionDelay: open ? `${i * 80}ms` : "0ms",
                                     }}
                                 >
                                     {link.label}
@@ -112,7 +114,7 @@ function Humburger() {
                         ))}
                     </ul>
 
-                    <div className="w-full h-[0.5px] bg-(--text-primary) my-5" />
+
 
                     <LanguageSwitcher />
                 </div>

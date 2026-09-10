@@ -5,9 +5,9 @@ function PrimaryButton({ btnText, varient, className }) {
     <button
       className={`
     group cursor-pointer flex items-center justify-center gap-4
-    px-4 py-2.5 rounded-lg
+    lg:px-4 md:px-3 lg:py-2.5 py-1.5 rounded-lg
     border transition-all duration-500 ease-in-out
-
+    lg:text-[16px] md:text-[14px]   
     ${varient === "primary"
           ? `
           bg-[linear-gradient(to_right,#034A91_0%,#078CFF_51%,#034A91_100%)]
