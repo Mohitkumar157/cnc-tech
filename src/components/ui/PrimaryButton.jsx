@@ -5,7 +5,7 @@ function PrimaryButton({ btnText, varient, className }) {
     <button
       className={`
     group cursor-pointer flex items-center justify-center gap-4
-    lg:px-4 md:px-3 lg:py-2.5 py-1.5 rounded-lg
+    lg:px-4 md:px-3 lg:py-2.5 py-2 px-3 rounded-lg
     border transition-all duration-500 ease-in-out
     lg:text-[16px] md:text-[14px]   
     ${varient === "primary"
@@ -17,7 +17,7 @@ function PrimaryButton({ btnText, varient, className }) {
           hover:shadow-[0_8px_25px_rgba(7,140,255,0.45)]
         `
           : `
-          bg-transparent text-[#078CFF] border-[#078CFF]/60
+          bg-transparent text-white border-white/60
           hover:bg-[#078CFF]/10 hover:border-[#078CFF]
           hover:shadow-[0_5px_18px_rgba(7,140,255,0.18)]
         `
