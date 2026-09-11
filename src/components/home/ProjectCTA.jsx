@@ -6,6 +6,7 @@ import {
   CheckCircle2,
   MessageCircle,
 } from "lucide-react";
+import SecondHeading from "../ui/SecondHeading";
 
 const benefits = [
   {
@@ -47,14 +48,9 @@ function ProjectCTA() {
       />
 
       <div className="container px-4 xl:px-0">
-        <div className="max-w-2xl flex flex-col items-start gap-2 md:gap-5">
+        <div className="max-w-2xl flex flex-col items-start gap-4 md:gap-4">
           
-            <h2
-              id="project-cta-heading"
-              className="font-inter text-2xl font-bold text-white sm:text-3xl lg:text-4xl"
-            >
-              Ready to Start Your Project?
-            </h2>
+            <SecondHeading children={" Ready to Start Your Project?"} className ={"text-white"}/>
 
             <p className=" font-inter text-sm leading-6 text-blue-50 sm:text-base">
               Get the best precision manufacturing solutions tailored to your

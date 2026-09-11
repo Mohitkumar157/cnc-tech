@@ -120,7 +120,7 @@ const OurProducts = () => {
             id="products-heading"
             className="my-2"
           >
-            High Precision. Perfect Finish.
+            High Precision Perfect Finish
           </SecondHeading>
         </div>
 
@@ -133,7 +133,7 @@ const OurProducts = () => {
         />
 
         {/* Product slider */}
-        <div className="relative my-8">
+        <div className="relative my-6">
           {hasProducts ? (
             <>
               <div

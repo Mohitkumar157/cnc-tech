@@ -11,7 +11,7 @@ function Marque({ logosData }) {
           {marqueeLogos.map((logo, index) => (
             <div
               key={`${logo.id}-${index}`}
-              className="flex h-20 w-40 shrink-0 items-center justify-center"
+              className="flex md:h-20 md:w-40 shrink-0 items-center justify-center"
             >
               <Image
                 src={logo.image}

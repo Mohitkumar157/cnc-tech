@@ -38,7 +38,7 @@ const statsData = [
 
 function Hero() {
   return (
-    <section className='relative flex items-center justify-center w-full h-[60vh] sm:h-[60vh] md:h-[70vh] lg:h-[50vw] overflow-hidden'>
+    <section className='relative flex items-center justify-center w-full h-[60vh] md:h-[70vh] lg:h-[50vw] overflow-hidden'>
       <Image
         src="/home/hero-banner.png"
         alt="Precision CNC manufacturing"
@@ -53,14 +53,14 @@ function Hero() {
       <div className="absolute inset-0 md:bg-[linear-gradient(90deg,#00162f_0%,rgba(0,22,47,0.95)_28%,rgba(0,22,47,0.65)_48%,rgba(0,22,47,0.18)_68%,transparent_85%)]  bg-[linear-gradient(90deg,#00162f_0%,rgba(0,22,47,0.95)_8%,rgba(0,22,47,0.65)_100%,rgba(0,22,47,0.18)_68%,transparent_85%)]" />
 
       {/* content */}
-      <div className='absolute w-full mt-10 md:mt-0'>
+      <div className='absolute w-full '>
         <div className="container px-4 xl:px-0">
           <SectionEyebrow
             label={"An ISO Certified Company"}
             align={"left"}
             className={"text-white"}
           />
-          <h1 className='text-[28px] sm:text-[36px] md:text-[40px] lg:text-[70px] text-white font-inter leading-7 sm:leading-9 md:leading-9 lg:leading-15 tracking-[0.1] font-extrabold'>
+          <h1 className='text-[36px] md:text-[40px] lg:text-[70px] text-white font-inter leading-9 md:leading-9 lg:leading-15 tracking-[0.1] font-extrabold'>
             PRECISION CNC <br className='' />
             <span className='text-[#0778db]'> MANUFACTURING</span>
           </h1>
@@ -75,12 +75,12 @@ function Hero() {
       </div>
 
       {/* bottom info */}
-      <div className='hidden sm:block absolute left-0 bottom-0 w-full'>
+      <div className=' absolute left-0 bottom-0 w-full'>
         <div className="container px-4 xl:px-0 border border-b-0 rounded-t-xl  border-[#087ED5]/55 bg-linear-to-b from-[#012351]/30 via-[#011B3D]/35 to-[#061C38]/30 backdrop-blur-xl  shadow-[inset_0_0_18px_rgba(0,112,220,0.12),0_0_12px_rgba(0,102,204,0.16)]">
           <div className="grid grid-cols-2 sm:grid-cols-4 lg:gap-4 md:gap-2 gap-2 lg:py-4 py-3">
             {
               statsData.map((data, index) => (
-                <div key={data.id} className={`${index !== statsData.length - 1 && "border-r"} border-[#087ED5]/55 flex items-center justify-center text-white gap-2 lg:gap-4`}>
+                <div key={data.id} className={`${index !== statsData.length - 1 && "border-r"} border-[#087ED5]/55 flex items-center justify-start sm:justify-center text-white gap-4`}>
                   <div>
                     {
                       <data.Icon

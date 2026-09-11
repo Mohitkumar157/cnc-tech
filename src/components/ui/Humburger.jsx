@@ -37,16 +37,16 @@ function Humburger() {
                 onClick={() => setOpen(true)}
                 aria-label="Open mobile menu"
                 aria-expanded={open}
-                className="humburger flex cursor-pointer flex-col gap-1.5 overflow-hidden rounded-md border border-white/15 bg-white/5 p-3 transition-colors hover:border-[#078CFF]/60 hover:bg-white/10"
+                className="humburger flex cursor-pointer flex-col gap-1.5 overflow-hidden rounded-md border border-white/75 bg-white/5 p-3 transition-colors hover:border-[#078CFF]/60 hover:bg-white/10"
             >
-                <span className="inline-block h-[0.3] w-5 rounded-full bg-[#078CFF]" />
+                <span className="inline-block h-[0.4] w-5 rounded-full bg-[#95ceff]" />
 
                 <span
-                    className={`inline-block h-[0.3] rounded-full bg-[#078CFF] transition-all duration-200 ${open ? "w-5" : "w-3"
+                    className={`inline-block h-[0.4] rounded-full bg-[#95ceff] transition-all duration-200 ${open ? "w-5" : "w-3"
                         }`}
                 />
 
-                <span className="inline-block h-[0.3] w-5 rounded-full bg-[#078CFF]" />
+                <span className="inline-block h-[0.4] w-5 rounded-full bg-[#95ceff]" />
             </button>
 
             {/* Mobile Navigation */}
