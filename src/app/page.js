@@ -20,7 +20,9 @@ function page() {
       <Reveal>
         <AboutUs />
       </Reveal>
-      <OurServices />
+      <Reveal>
+        <OurServices />
+      </Reveal>
       <OurProducts />
       <WhyChooseUs />
       <OurProcess />
