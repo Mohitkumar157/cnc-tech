@@ -32,37 +32,41 @@ function AboutUs() {
             <div className="container relative z-10 px-4 xl:px-0">
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-4">
                     {/* Content */}
-                    <div>
-                        <div>
-                            <SectionEyebrow
-                                label="About CNC Tech"
-                                align="left"
-                                className="ml-0.5 text-black"
-                            />
+                    <div data-animate="fade-up">
+                        <div className='overflow-hidden'>
+                            <div>
+                                <SectionEyebrow
+                                    label="About CNC Tech"
+                                    align="left"
+                                    className="ml-0.5 text-black"
+                                />
 
-                            <SecondHeading align="left">
-                                Delivering Precision. <br />
+                                <SecondHeading align="left">
+                                    Delivering Precision. <br />
 
-                                <span className="text-[#0778db]">
-                                    Building Trust.
-                                </span>
-                            </SecondHeading>
+                                    <span className="text-[#0778db]">
+                                        Building Trust.
+                                    </span>
+                                </SecondHeading>
+                            </div>
                         </div>
 
-                        <p className="my-4 font-inter leading-7 text-black">
-                            Established in 2008, CNC Tech is a leading manufacturer
-                            of <br className="hidden lg:block" />
-                            precision turned parts, machined components, molds, dies
-                            and <br className="hidden lg:block" />
-                            industrial solutions. We combine advanced technology,
-                            skilled <br className="hidden lg:block" />
-                            engineers and strict quality standards to deliver products
-                            that <br className="hidden lg:block" />
-                            exceed expectations.
-                        </p>
+                        <div className='overflow-hidden'>
+                            <p data-animate="fade-up" className="my-4 font-inter leading-7 text-black">
+                                Established in 2008, CNC Tech is a leading manufacturer
+                                of <br className="hidden lg:block" />
+                                precision turned parts, machined components, molds, dies
+                                and <br className="hidden lg:block" />
+                                industrial solutions. We combine advanced technology,
+                                skilled <br className="hidden lg:block" />
+                                engineers and strict quality standards to deliver products
+                                that <br className="hidden lg:block" />
+                                exceed expectations.
+                            </p>
+                        </div>
 
-                        <div>
-                            <ul className="mb-4 flex flex-col gap-2 font-inter">
+                        <div className='overflow-hidden'>
+                            <ul data-animate="fade-up" className="mb-4 flex flex-col gap-2 font-inter">
                                 {features.map((item, index) => (
                                     <li
                                         key={index}
@@ -80,12 +84,15 @@ function AboutUs() {
                             </ul>
                         </div>
 
-                        <div>
-                            <PrimaryButton
-                                btnText="Know More About Us"
-                                varient="primary"
-                            />
+                        <div className='overflow-hidden'>
+                            <div data-animate="fade-up">
+                                <PrimaryButton
+                                    btnText="Know More About Us"
+                                    varient="primary"
+                                />
+                            </div>
                         </div>
+
                     </div>
 
                     {/* Images */}
@@ -93,6 +100,7 @@ function AboutUs() {
                         <div className="grid grid-cols-2 gap-2">
                             <div className="relative col-span-2 aspect-[3/1.2] overflow-hidden rounded-xl">
                                 <Image
+                                    data-animate="scale-image"
                                     src="/home/cnc-factory-floor.webp"
                                     alt="CNC manufacturing factory floor"
                                     fill
@@ -103,6 +111,7 @@ function AboutUs() {
 
                             <div className="relative aspect-[3/1.9] overflow-hidden rounded-xl">
                                 <Image
+                                data-animate="child-scale-in"
                                     src="/home/cnc-machining-process.webp"
                                     alt="CNC machining process"
                                     fill
@@ -113,6 +122,7 @@ function AboutUs() {
 
                             <div className="relative aspect-[3/1.9] overflow-hidden rounded-xl">
                                 <Image
+                                data-animate="child-scale-in"
                                     src="/home/cnc-precision-components.webp"
                                     alt="CNC precision machined components"
                                     fill
@@ -123,7 +133,7 @@ function AboutUs() {
                         </div>
 
                         {/* Experience label */}
-                        <div className="absolute left-1/2 top-1/2 z-30 -translate-x-1/2 -translate-y-1/2 rounded-xl bg-linear-to-r from-[#003DA8] to-[#0878F9] px-6 py-3 text-white shadow-[0_12px_30px_rgba(0,61,168,0.28)] md:-left-4 md:translate-x-0 md:px-7">
+                        <div data-animate="child-scale-in" className="absolute left-1/2 top-1/2 z-30 -translate-x-1/2 -translate-y-1/2 rounded-xl bg-linear-to-r from-[#003DA8] to-[#0878F9] px-6 py-3 text-white shadow-[0_12px_30px_rgba(0,61,168,0.28)] md:-left-4 md:translate-x-0 md:px-7">
                             <h3 className="font-montserrat text-[24px] font-semibold md:text-[36px]">
                                 15+
                             </h3>

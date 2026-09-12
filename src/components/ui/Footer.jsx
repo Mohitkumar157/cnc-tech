@@ -66,7 +66,7 @@ function Footer() {
                 alt="CNC Tech"
                 width={150}
                 height={48}
-                className="w-36 h-auto md:w-40 lg:w-50"
+                className="w-20 h-auto md:w-25"
               />
             </Link>
 

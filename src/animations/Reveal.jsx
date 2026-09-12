@@ -1,13 +1,10 @@
 "use client";
 
-import { useRef } from "react";
-import {gsap,ScrollTrigger,useGSAP} from "../lib/gsap"
+import React, { useRef } from "react";
+import { gsap, ScrollTrigger, useGSAP } from "../lib/gsap";
 import animations from "./animation";
 
-export default function Reveal({
-    children,
-    className = "",
-}) {
+function Reveal({ children }) {
     const wrapperRef = useRef(null);
 
     useGSAP(
@@ -16,146 +13,96 @@ export default function Reveal({
 
             if (!wrapper) return;
 
-            const matchMedia = gsap.matchMedia();
+            const mm = gsap.matchMedia();
 
             const createAnimations = (isMobile) => {
-                const elements = gsap.utils.toArray(
-                    "[data-animate]",
-                    wrapper
-                );
+                const cards = wrapper.querySelectorAll("[data-animate]");
 
-                elements.forEach((element) => {
-                    const animationName = element.dataset.animate;
+                cards.forEach((card) => {
+                    const animationName = card.dataset.animate;
                     const config = animations[animationName];
 
-                    if (!config) {
-                        console.warn(
-                            `Animation "${animationName}" not found`
-                        );
+                    if (!config) return;
 
-                        return;
-                    }
-
-                    const childElements = gsap.utils.toArray(
-                        "[data-animate-child]",
-                        element
+                    const children = card.querySelectorAll(
+                        "[data-animate-child]"
                     );
 
-                    const timeline = gsap.timeline({
+                    const childTl = gsap.timeline({
                         paused: true,
-                        defaults: {
-                            ease: config.ease ?? "power4.out",
-                        },
                     });
 
-                    /*
-                     * Parent animation
-                     */
-                    timeline.from(element, {
-                        ...config.from,
-                        duration: config.duration ?? 1,
-                        clearProps: config.clearProps ?? "transform,opacity",
-                    });
-
-                    /*
-                     * Children animation
-                     */
-                    childElements.forEach((child, index) => {
-                        const childAnimationName =
-                            child.dataset.animateChild;
-
+                    children.forEach((child) => {
                         const childConfig =
-                            animations[childAnimationName];
+                            animations[child.dataset.animateChild];
 
                         if (!childConfig) return;
 
-                        timeline.from(
+                        childTl.from(
                             child,
                             {
                                 ...childConfig.from,
-                                duration: childConfig.duration ?? 0.8,
-                                ease:
-                                    childConfig.ease ??
-                                    config.ease ??
-                                    "power4.out",
-                                clearProps:
-                                    childConfig.clearProps ??
-                                    "transform,opacity",
+                                duration: childConfig.duration ?? 1,
+                                ease: "power4.out",
                             },
-                            config.childStart ?? index * 0.1
+                            0
                         );
                     });
 
-                    ScrollTrigger.create({
-                        trigger: element,
+                    gsap.from(card, {
+                        ...config.from,
+                        duration: config.duration ?? 1,
+                        ease: "power4.out",
 
-                        start: isMobile
-                            ? config.mobileStart ?? "top 90%"
-                            : config.desktopStart ?? "top 80%",
+                        scrollTrigger: {
+                            trigger: card,
+                            start: isMobile
+                                ? config.mobileStart ?? "top 80%"
+                                : config.desktopStart ?? "top 75%",
 
-                        once: config.once ?? true,
+                            toggleActions: "play none none none",
 
-                        onEnter: () => {
-                            timeline.play();
+                            onEnter: () => {
+                                childTl.play();
 
-                            const odometers = element.querySelectorAll(
-                                "[data-odometer]"
-                            );
+                                const odometers =
+                                    card.querySelectorAll("[data-odometer]");
 
-                            odometers.forEach((odometer) => {
-                                odometer.dispatchEvent(
-                                    new CustomEvent("odometer-start")
-                                );
-                            });
+                                odometers.forEach((odometer) => {
+                                    odometer.dispatchEvent(
+                                        new CustomEvent("odometer-start")
+                                    );
+                                });
+                            },
                         },
                     });
                 });
             };
 
-            matchMedia.add(
-                {
-                    mobile: "(max-width: 767px)",
-                    desktop: "(min-width: 768px)",
-                    reduceMotion:
-                        "(prefers-reduced-motion: reduce)",
-                },
-                (context) => {
-                    const { mobile, reduceMotion } =
-                        context.conditions;
+            // Mobile
+            mm.add("(max-width: 767px)", () => {
+                createAnimations(true);
+            });
 
-                    if (reduceMotion) {
-                        gsap.set("[data-animate]", {
-                            clearProps: "all",
-                        });
-
-                        gsap.set("[data-animate-child]", {
-                            clearProps: "all",
-                        });
-
-                        return;
-                    }
-
-                    createAnimations(mobile);
-                }
-            );
+            // Desktop
+            mm.add("(min-width: 768px)", () => {
+                createAnimations(false);
+            });
 
             return () => {
-                matchMedia.revert();
+                mm.revert();
             };
         },
         {
             scope: wrapperRef,
-            dependencies: [],
-            revertOnUpdate: true,
         }
     );
 
     return (
-        <div
-            ref={wrapperRef}
-            className={`w-full ${className}`}
-        >
+        <section ref={wrapperRef} className="w-full">
             {children}
-        </div>
+        </section>
     );
 }
+
+export default Reveal;

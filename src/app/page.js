@@ -17,7 +17,9 @@ function page() {
         <Hero />
       </Reveal>
       <TrustedBy />
-      <AboutUs />
+      <Reveal>
+        <AboutUs />
+      </Reveal>
       <OurServices />
       <OurProducts />
       <WhyChooseUs />

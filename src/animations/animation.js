@@ -1,7 +1,7 @@
 const animations = {
   "fade-up": {
     from: {
-      y: 300,
+      y: 100,
       opacity: 0,
     },
   },
