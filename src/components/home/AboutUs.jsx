@@ -100,7 +100,7 @@ function AboutUs() {
                         <div className="grid grid-cols-2 gap-2">
                             <div className="relative col-span-2 aspect-[3/1.2] overflow-hidden rounded-xl">
                                 <Image
-                                    data-animate="scale-image"
+                                    data-animate="child-scale-image"
                                     src="/home/cnc-factory-floor.webp"
                                     alt="CNC manufacturing factory floor"
                                     fill
