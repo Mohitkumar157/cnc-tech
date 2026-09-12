@@ -2,7 +2,7 @@ import "./globals.css";
 import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
 import { Inter, Montserrat } from "next/font/google";
-
+import SmoothScroll from "@/components/ui/SmoothScroll";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -27,8 +27,10 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
         <Header />
-        {children}
-        <Footer />
+        <SmoothScroll>
+          {children}
+          <Footer />
+        </SmoothScroll>
       </body>
     </html>
   );

@@ -5,6 +5,18 @@
   --font-montserrat: var(--font-montserrat);
 }
 
+body {
+  overflow-x: hidden;
+}
+
+#smooth-wrapper {
+  overflow: hidden;
+}
+
+#smooth-content {
+  will-change: transform;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -25,4 +37,14 @@
   will-change: transform;
   backface-visibility: hidden;
   perspective: 1000px;
+}
+.split-word {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+.split-char {
+  display: inline-block;
+  will-change: transform, opacity;
 }

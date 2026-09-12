@@ -49,15 +49,15 @@ function AboutUs() {
                             </SecondHeading>
                         </div>
 
-                        <p className="my-4 font-inter leading-7 text-slate-600">
+                        <p className="my-4 font-inter leading-7 text-black">
                             Established in 2008, CNC Tech is a leading manufacturer
-                            of <br className="hidden md:block" />
+                            of <br className="hidden lg:block" />
                             precision turned parts, machined components, molds, dies
-                            and <br className="hidden md:block" />
+                            and <br className="hidden lg:block" />
                             industrial solutions. We combine advanced technology,
-                            skilled <br className="hidden md:block" />
+                            skilled <br className="hidden lg:block" />
                             engineers and strict quality standards to deliver products
-                            that <br className="hidden md:block" />
+                            that <br className="hidden lg:block" />
                             exceed expectations.
                         </p>
 
@@ -66,7 +66,7 @@ function AboutUs() {
                                 {features.map((item, index) => (
                                     <li
                                         key={index}
-                                        className="flex items-center gap-3 text-slate-700"
+                                        className="flex items-center gap-3 text-black"
                                     >
                                         <Check
                                             aria-hidden="true"

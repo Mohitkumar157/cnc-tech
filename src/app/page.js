@@ -7,13 +7,15 @@ import OurServices from '@/components/home/OurServices'
 import Testimonial from '@/components/home/Testimonial'
 import TrustedBy from '@/components/home/TrustedBy'
 import WhyChooseUs from '@/components/home/WhyChooseUs'
-
+import Reveal from '@/animations/Reveal'
 import React from 'react'
 
 function page() {
   return (
     <main>
-      <Hero />
+      <Reveal>
+        <Hero />
+      </Reveal>
       <TrustedBy />
       <AboutUs />
       <OurServices />

@@ -5,14 +5,8 @@ import { X } from "lucide-react";
 import { useState } from "react";
 import LanguageSwitcher from "./LanguageSwitcher";
 import Image from "next/image";
+import { navigationLinks } from "@/data/navigation";
 
-const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/about", label: "About" },
-    { href: "/service", label: "Services" },
-    { href: "/blog", label: "Blog" },
-    { href: "/contact", label: "Contact" },
-];
 
 function Humburger() {
     const [open, setOpen] = useState(false);
@@ -92,7 +86,7 @@ function Humburger() {
 
                     {/* Navigation Links */}
                     <ul className="flex flex-col gap-1">
-                        {navLinks.map((link, i) => (
+                        {navigationLinks.map((link, i) => (
                             <li
                                 key={link.href}
                                 className="overflow-hidden border-b border-white/8 text-[17px] font-semibold"
