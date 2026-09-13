@@ -54,7 +54,9 @@ function OurProcess() {
 
       <div className="container px-4 xl:px-0">
         {/* Section heading */}
-        <header className="relative text-center">
+         
+         <div className="overflow-hidden">
+           <div className="relative text-center" data-animate = "fade-up">
           <SectionEyebrow
             label={"OUR PROCESS"}
             className={"text-[#0878F9]"}
@@ -65,7 +67,8 @@ function OurProcess() {
             children={"From Concept to Completion"}
             className={"mt-2 text-[#071B42]"}
           />
-        </header>
+        </div>
+         </div>
 
         {/* Process timeline */}
         <ol className="relative mt-8 grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-y-12 xl:grid-cols-6 xl:gap-0">
@@ -77,6 +80,7 @@ function OurProcess() {
 
           {processData.map((process, index) => (
             <li
+              data-animate= "fade-up"
               key={process.id}
               className="group relative flex gap-5 xl:block xl:px-4 xl:text-center"
             >

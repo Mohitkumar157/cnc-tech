@@ -18,7 +18,6 @@ import PrimaryButton from "../ui/PrimaryButton";
 
 const categories = [
   "All",
-  "Automotive",
   "Industrial",
   "Molds & Dies",
   "Sheet Metal",
@@ -110,27 +109,32 @@ const OurProducts = () => {
     <section aria-labelledby="products-heading" className="overflow-hidden bg-white py-8 md:py-12 lg:py-16">
       <div className="container px-4 xl:px-0 ">
         {/* Section header */}
-        <div className="text-center">
-          <SectionEyebrow
-            label="OUR PRODUCTS"
-            className="text-[#0778db]"
-          />
+        <div className="overflow-hidden">
+          <div className="text-center" data-animate="fade-up">
+            <SectionEyebrow
+              label="OUR PRODUCTS"
+              className="text-[#0778db]"
+            />
 
-          <SecondHeading
-            id="products-heading"
-            className="my-2"
-          >
-            High Precision Perfect Finish
-          </SecondHeading>
+            <SecondHeading
+              id="products-heading"
+              className="my-2"
+            >
+              High Precision Perfect Finish
+            </SecondHeading>
+          </div>
         </div>
 
         {/* Filter tabs */}
-        <FilterTabs
-          buttonsData={categories}
-          activeButton={activeCategory}
-          onButtonChange={handleCategoryChange}
-          className="mt-6"
-        />
+        <div className="overflow-hidden">
+          <FilterTabs
+            buttonsData={categories}
+            activeButton={activeCategory}
+            onButtonChange={handleCategoryChange}
+            className="mt-6"
+
+          />
+        </div>
 
         {/* Product slider */}
         <div className="relative my-6">
@@ -197,7 +201,7 @@ const OurProducts = () => {
 
         {/* CTA */}
         <div className="flex justify-center">
-          <PrimaryButton btnText={"View All Products"} varient={"primary"}/>
+          <PrimaryButton btnText={"View All Products"} varient={"primary"} />
         </div>
       </div>
     </section>

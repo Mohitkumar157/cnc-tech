@@ -19,9 +19,9 @@ function OurServices() {
                 </p>
                   </div>
                 <div className='overflow-hidden'>
-                    <div data-animate = "fade-up" className='mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-4'>
+                    <div className='mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-4'>
                     {servicesData.map((serviceItem) => (
-                       <div key={serviceItem.title} className='overflow-hidden'>
+                       <div data-animate = "fade-up" key={serviceItem.title} className='overflow-hidden'>
                          <ServiceCard {...serviceItem} />
                        </div>
                     ))}

@@ -1,3 +1,5 @@
+
+
 const animations = {
   "fade-up": {
     from: {
@@ -68,6 +70,7 @@ const animations = {
       scale: 0,
       y: 80,
       opacity: 0,
+      
     },
   },
 
@@ -77,7 +80,7 @@ const animations = {
       opacity: 0,
     },
     duration: 1.5,
-    mobileStart: "top 30%",
+    mobileStart: "top 80%",
     desktopStart: "top 50%",
   },
 
@@ -86,9 +89,7 @@ const animations = {
       scale: 1.7,
       opacity: 0,
     },
-    duration: 1.5,
-    mobileStart: "top 30%",
-    desktopStart: "top 50%",
+    duration: 1.5
   },
 
   "zoom-out": {

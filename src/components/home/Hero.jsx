@@ -21,13 +21,13 @@ const statsData = [
   },
   {
     id: 2,
-    value: 500,
+    value: 100,
     label: "Happy Clients",
     Icon: UsersRound,
   },
   {
     id: 3,
-    value: 2500,
+    value: 500,
     label: "Projects Delivered",
     Icon: ChartNoAxesCombined,
   },

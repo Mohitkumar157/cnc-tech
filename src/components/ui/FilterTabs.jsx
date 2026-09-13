@@ -7,7 +7,7 @@ function FilterTabs({
     className
 }) {
     return (
-        <ul className={`flex items-center justify-center flex-wrap gap-3 ${className}`}>
+        <ul data-animate="fade-up" className={`flex items-center justify-center flex-wrap gap-3 ${className}`}>
             {buttonsData.map((buttonText, index) => (
                 <li key={index} className="shrink-0">
                     <button

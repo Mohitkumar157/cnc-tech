@@ -7,13 +7,15 @@ function WhyChooseUs() {
     return (
         <section className='bg-[#011D40] py-8 md:py-12 lg:py-16'>
             <div className="container px-4 xl:px-0">
-                <div className="heading">
+                <div className='overflow-hidden'>
+                    <div className="heading" data-animate = "fade-up">
                     <SectionEyebrow label={"WHY CHOOSE US"} className={"text-white"} />
                     <SecondHeading children={"Precision You Can Trust"} className={"text-white"} />
                 </div>
+                </div>
                 <div className="mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
                     {whyChooseUsData.map((item , i) => (
-                        <article key={i} className='px-3 py-5 border border-[#087ED5]/75 rounded-md flex flex-col gap-2 justify-center items-center'>
+                        <article data-animate ="child-scale-in" key={i} className='px-3 py-5 border border-[#087ED5]/75 rounded-md flex flex-col gap-2 justify-center items-center'>
                             <div className="flex items-center justify-center size-16 rounded-full bg-blue-600/20">
                                 <Image
                                     src={item.icon}

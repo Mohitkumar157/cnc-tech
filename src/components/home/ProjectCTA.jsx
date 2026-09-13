@@ -29,6 +29,7 @@ const benefits = [
 function ProjectCTA() {
   return (
     <section
+      data-animate = 'child-scale-in'
       aria-labelledby="project-cta-heading"
       className="relative isolate overflow-hidden p-4 sm:p-5 md:p-6 lg:p-10 rounded-xl"
     >

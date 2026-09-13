@@ -53,8 +53,12 @@ function MachineSlider() {
     >
       <div className="container px-4 xl:px-0">
 
-        <SectionEyebrow label={"OUR MACHINERY"} className={"text-[#0778db]"}/>
-        <SecondHeading children={"Advanced Machines Superior Results"}/>
+        <div className="overflow-hidden">
+          <div data-animate="fade-up">
+            <SectionEyebrow label={"OUR MACHINERY"} className={"text-[#0778db]"} />
+            <SecondHeading children={"Advanced Machines Superior Results"} />
+          </div>
+        </div>
         <div
           ref={emblaRef}
           className="overflow-hidden mt-8"
@@ -64,6 +68,7 @@ function MachineSlider() {
           <ul className="-ml-4 flex touch-pan-y">
             {loopMachines.map((machine, index) => (
               <li
+                data-animate = "fade-up"
                 key={`${machine.id}-${index}`}
                 className="
                   min-w-0 shrink-0 grow-0 pl-4
@@ -97,9 +102,9 @@ function MachineSlider() {
                     </h3>
 
                     <div className="mt-2 text-[14px] font-semibold font-inter leading-5 text-slate-600">
-                      {machine.details.map((detail , i)=>(
+                      {machine.details.map((detail, i) => (
                         <p key={i}>
-                          {detail}  
+                          {detail}
                         </p>
                       ))}
                     </div>

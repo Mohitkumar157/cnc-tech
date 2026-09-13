@@ -57,7 +57,7 @@ function Reveal({ children }) {
                         scrollTrigger: {
                             trigger: card,
                             start: isMobile
-                                ? config.mobileStart ?? "top 80%"
+                                ? config.mobileStart ?? "top 90%"
                                 : config.desktopStart ?? "top 75%",
 
                             toggleActions: "play none none none",

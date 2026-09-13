@@ -5,7 +5,6 @@ import OurProcess from '@/components/home/OurProcess'
 import OurProducts from '@/components/home/OurProducts'
 import OurServices from '@/components/home/OurServices'
 import Testimonial from '@/components/home/Testimonial'
-import TrustedBy from '@/components/home/TrustedBy'
 import WhyChooseUs from '@/components/home/WhyChooseUs'
 import Reveal from '@/animations/Reveal'
 import React from 'react'
@@ -16,18 +15,27 @@ function page() {
       <Reveal>
         <Hero />
       </Reveal>
-      <TrustedBy />
       <Reveal>
         <AboutUs />
       </Reveal>
       <Reveal>
-        <OurServices />
+         <OurServices />
       </Reveal>
-      <OurProducts />
-      <WhyChooseUs />
-      <OurProcess />
-      <MachineSlider />
-      <Testimonial />
+      <Reveal>
+        <OurProducts />
+      </Reveal>
+      <Reveal>
+        <WhyChooseUs />
+      </Reveal>
+      <Reveal>
+        <OurProcess />
+      </Reveal>
+      <Reveal>
+        <MachineSlider />
+      </Reveal>
+     <Reveal>
+       <Testimonial />
+     </Reveal>
     </main>
   )
 }
