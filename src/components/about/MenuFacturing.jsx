@@ -34,7 +34,7 @@ function MenuFacturing() {
     return (
         <section className='py-8 md:py-12 lg:py-16'>
             <div className="container px-4 xl:px-0">
-                <div className="grid grid-cols-12 gap-4">
+                <div className="grid grid-cols-12 md:gap-6 gap-4">
                     <div className='col-span-12 lg:col-span-6 relative aspect-3/2 md:aspect-650/565 rounded-xl md:rounded-2xl overflow-hidden'>
                         <Image
                             src={"/about/about-us-image.jfif"}

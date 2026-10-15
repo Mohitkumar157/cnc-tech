@@ -21,7 +21,7 @@ function Header() {
             />
           </Link>
           <nav className=''>
-            <ul className='flex items-center lg:gap-4 md:gap-2 font-inter'>
+            <ul className='flex items-center lg:gap-8 md:gap-4 font-inter'>
               {navigationLinks.map((item) => (
                 <li key={item.label} className='text-white font-medium md:text-[12px] lg:text-[14px] xl:text-[16px] tracking-[1.22] capitalize'>
                   <Link href={item.href}>

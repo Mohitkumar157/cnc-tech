@@ -16,8 +16,8 @@ export const navigationLinks = [
     href: "/products",
   },
   {
-    label: "Industries",
-    href: "/industries",
+   label : "Manufacturing Hub",
+   href : "/manufacturing-hub"
   },
   {
     label: "Contact",

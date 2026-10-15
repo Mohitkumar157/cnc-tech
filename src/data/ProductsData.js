@@ -48,6 +48,13 @@ const productsData = [
     image: "/home/shafts-hd.webp",
     alt: "Precision machined industrial shafts",
   },
+  {
+    id: 8,
+    title: "Flanges",
+    category: "Industrial",
+    image: "/home/flanges-hd.webp",
+    alt: "Precision machined industrial flanges",
+  },
 ];
 
 export default productsData;

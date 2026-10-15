@@ -13,7 +13,7 @@ const quickLinks = [
   { label: "About Us", href: "/about-us" },
   { label: "Services", href: "/services" },
   { label: "Products", href: "/products" },
-  { label: "Industries", href: "/industries" },
+  { label : "Manufacturing Hub", href : "/manufacturing-hub"},
   { label: "Contact Us", href: "/contact-us" },
 ];
 
