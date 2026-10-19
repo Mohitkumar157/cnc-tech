@@ -55,30 +55,37 @@ function OurValues() {
 
             <div className="container px-4 md:px-0">
                 {/* Section Heading */}
-                <div className="mx-auto max-w-2xl text-center">
-                    <SectionEyebrow label={"Our Values"} className={"text-[#0778db]"} />
-                    <SecondHeading children={"What Drives Us"} />
+                <div className='overflow-hidden'>
+                    <div
+                        data-animate="fade-up"
+                        className="mx-auto max-w-2xl text-center"
+                    >
+                        <SectionEyebrow label={"Our Values"} className={"text-[#0778db]"} />
+                        <SecondHeading children={"What Drives Us"} />
+                    </div>
                 </div>
 
-                {/* Values Grid */}
-                <div className="mt-8 grid grid-cols-1 gap-6 md:gap-10 sm:grid-cols-2 lg:grid-cols-5 lg:gap-6">
-                    {values.map((value, index) => {
-                        const Icon = value.icon
+                <div className='overflow-hidden'>
+                    {/* Values Grid */}
+                    <div className="mt-8 grid grid-cols-1 gap-6 md:gap-10 sm:grid-cols-2 lg:grid-cols-5 lg:gap-6">
+                        {values.map((value, index) => {
+                            const Icon = value.icon
 
-                        return (
-                            <div
-                                key={index}
-                                className="
+                            return (
+                                <div
+                                    key={index}
+                                    className="
                   group text-center
                   rounded-2xl
                    py-7
                   transition-all duration-300
                   hover:-translate-y-1
                 "
-                            >
-                                {/* Icon */}
-                                <div
-                                    className="
+                                    data-animate="fade-up"
+                                >
+                                    {/* Icon */}
+                                    <div
+                                        className="
                     mx-auto flex h-14 w-14 items-center justify-center
                     rounded-full
                     border border-[#078CFF]/20
@@ -88,25 +95,26 @@ function OurValues() {
                     group-hover:bg-[#078CFF]
                     group-hover:text-white
                   "
-                                >
-                                    <Icon
-                                        size={27}
-                                        strokeWidth={1.7}
-                                    />
+                                    >
+                                        <Icon
+                                            size={27}
+                                            strokeWidth={1.7}
+                                        />
+                                    </div>
+
+                                    {/* Title */}
+                                    <h3 className="text-base my-2 font-inter font-semibold text-[#071B42] xl:mt-4">
+                                        {value.title}
+                                    </h3>
+
+                                    {/* Description */}
+                                    <p className=" font-inter leading-5 text-slate-600 xl:mx-auto">
+                                        {value.description}
+                                    </p>
                                 </div>
-
-                                {/* Title */}
-                                <h3 className="text-base my-2 font-inter font-semibold text-[#071B42] xl:mt-4">
-                                    {value.title}
-                                </h3>
-
-                                {/* Description */}
-                                <p className=" font-inter leading-5 text-slate-600 xl:mx-auto">
-                                    {value.description}
-                                </p>
-                            </div>
-                        )
-                    })}
+                            )
+                        })}
+                    </div>
                 </div>
             </div>
         </section>

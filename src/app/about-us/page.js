@@ -1,8 +1,6 @@
+import Reveal from '@/animations/Reveal'
 import AboutHero from '@/components/about/AboutHero'
 import MenuFacturing from '@/components/about/MenuFacturing'
-import MissionAndVision from '@/components/about/MissionAndVision'
-import OurJourney from '@/components/about/OurJourney'
-import OurTeam from '@/components/about/OurTeam'
 import OurValues from '@/components/about/OurValues'
 import AboutUs from '@/components/home/AboutUs'
 import Video from '@/components/menufacturing-hub/Video'
@@ -13,13 +11,16 @@ function page() {
   return (
     <section className=''>
       <AboutHero />
-      <AboutUs />
-      {/* <OurTeam /> */}
-     {/* <MissionAndVision />
-     <OurJourney /> */}
-     <OurValues />
+      <Reveal>
+        <AboutUs />
+      </Reveal>
+     <Reveal>
+      <OurValues />
+     </Reveal>
      <Video />
-     <MenuFacturing />
+     <Reveal>
+      <MenuFacturing />
+     </Reveal>
     </section>
   )
 }
