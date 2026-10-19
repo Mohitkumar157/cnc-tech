@@ -12,7 +12,7 @@ function Testimonial() {
                <SectionEyebrow 
                label={"What our clients say"} 
                align={"left"} 
-               className={"text-[#0778db]"}
+               className={"text-[#0778db] md:text-start! text-center!"}
                />
             </div>
            </div>

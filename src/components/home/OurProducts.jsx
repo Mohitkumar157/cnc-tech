@@ -18,10 +18,13 @@ import PrimaryButton from "../ui/PrimaryButton";
 
 const categories = [
   "All",
-  "Industrial",
-  "Molds & Dies",
-  "Sheet Metal",
-  "Precision Parts",
+  "Gears & Pinions",
+  "Brass",
+  "Gunmetal",
+  "Aluminium ",
+  " CNC",
+  "Surgical",
+  "Microscope Components"
 ];
 
 const OurProducts = () => {
@@ -120,7 +123,7 @@ const OurProducts = () => {
               id="products-heading"
               className="my-2"
             >
-              High Precision Perfect Finish
+              Precision Components For Diverse Applications
             </SecondHeading>
           </div>
         </div>

@@ -9,7 +9,7 @@ import HeroReveal from '@/animations/HeroReveal';
 
 function ServiceHero() {
   return (
-    <section className='relative flex items-center justify-center w-full h-[80vh] sm:h-[60vh]  md:h-[70vh] lg:h-[50vw] overflow-hidden'>
+    <section className='relative flex items-center justify-center w-full h-[60vh] md:h-[70vh] lg:h-[50vw] overflow-hidden'>
       <Image
         src="/home/hero-banner.png"
         alt="Precision CNC manufacturing"
@@ -74,7 +74,7 @@ function ServiceHero() {
           <div className='overflow-hidden'>
             <div
               data-hero-reveal
-              className="flex flex-col sm:flex-row md:flex-row  md:items-center gap-5"
+              className="flex sm:flex-row md:flex-row  md:items-center gap-5"
             >
               <PrimaryButton
                 btnText="Get a Free Quote"

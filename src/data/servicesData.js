@@ -2,40 +2,40 @@ import { Cog , Box , CircleStar , Settings , MonitorCloud , InspectionPanel} fro
 
 const servicesData = [
   {
-    title: "CNC Turning",
+    title: "Gear & Pinion Manufacturing",
     description:
-      "High precision turned components with tight tolerances.",
-      icon : <Cog className='w-12 h-12 text-[#0778db]' strokeWidth={1.4}/>
+      "Precision gears and pinions for mechanical and power-transmission applications.",
+    icon: <Cog className='w-12 h-12 text-[#0778db]' strokeWidth={1.4}/>
   },
   {
-    title: "VMC Machining",
+    title: "CNC Precision Manufacturing",
     description:
-      "Complex parts with high accuracy using VMC machines.",
-       icon : <Box className='w-12 h-12 text-[#0778db]' strokeWidth={1.4}/>
+      "CNC-machined and turned components according to customer specifications.",
+    icon: <Box className='w-12 h-12 text-[#0778db]' strokeWidth={1.4}/>
   },
   {
-    title: "Mold & Die Manufacturing",
+    title: "Brass Component Manufacturing",
     description:
-      "Precision molds and dies for plastic & metal forming.",
-       icon : <CircleStar className='w-12 h-12 text-[#0778db]' strokeWidth={1.4}/>
+      "Precision Brass components for industrial and engineering requirements.",
+    icon: <CircleStar className='w-12 h-12 text-[#0778db]' strokeWidth={1.4}/>
   },
   {
-    title: "Precision Components",
+    title: "Gunmetal Component Manufacturing",
     description:
-      "High-quality precision components for critical applications.",
-      icon : <Settings className='w-12 h-12 text-[#0778db]' strokeWidth={1.4}/>
+      "Gunmetal components manufactured according to customer requirements.",
+    icon: <Settings className='w-12 h-12 text-[#0778db]' strokeWidth={1.4}/>
   },
   {
-    title: "Sheet Metal Fabrication",
+    title: "Aluminium Component Manufacturing",
     description:
-      "Custom sheet metal parts with superior finishing.",
-      icon : <InspectionPanel className='w-12 h-12 text-[#0778db]' strokeWidth={1.4}/>
+      "Aluminium components produced according to drawings and specifications.",
+    icon: <InspectionPanel className='w-12 h-12 text-[#0778db]' strokeWidth={1.4}/>
   },
   {
-    title: "CAD / CAM Design",
+    title: "Metal Moulding",
     description:
-      "Designing & simulation for better productivity & accuracy.",
-       icon : <MonitorCloud className='w-12 h-12 text-[#0778db]' strokeWidth={1.4}/>
+      "Manufacturing and moulding solutions for required metal components.",
+    icon: <MonitorCloud className='w-12 h-12 text-[#0778db]' strokeWidth={1.4}/>
   },
 ];
 

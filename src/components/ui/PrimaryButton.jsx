@@ -1,10 +1,12 @@
 import React from 'react'
 import { MoveRight } from 'lucide-react';
-function PrimaryButton({ btnText, varient, className }) {
+import Link from 'next/link';
+function PrimaryButton({ btnText, varient, href, className }) {
   return (
-    <button
+    <Link
+    href={href ? href : ""}
       className={`
-    group cursor-pointer flex items-center justify-center gap-4
+    group cursor-pointer w-fit flex items-center justify-center gap-4
     lg:px-4 md:px-3 lg:py-2.5 py-2 px-3 rounded-lg
     border transition-all duration-500 ease-in-out
     lg:text-[16px] md:text-[14px]   
@@ -34,7 +36,7 @@ function PrimaryButton({ btnText, varient, className }) {
           className="w-6 h-6 transition-transform duration-300 ease-in-out group-hover:translate-x-1"
         />
       )}
-    </button>
+    </Link>
   )
 }
 

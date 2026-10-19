@@ -10,12 +10,12 @@ function WhyChooseUs() {
                 <div className='overflow-hidden'>
                     <div className="heading" data-animate = "fade-up">
                     <SectionEyebrow label={"WHY CHOOSE US"} className={"text-white"} />
-                    <SecondHeading children={"Precision You Can Trust"} className={"text-white"} />
+                    <SecondHeading children={"Precision You Can Build On"} className={"text-white"} />
                 </div>
                 </div>
                 <div className="mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
                     {whyChooseUsData.map((item , i) => (
-                        <article data-animate ="child-scale-in" key={i} className='px-3 py-5 border border-[#087ED5]/75 rounded-md flex flex-col gap-2 justify-center items-center'>
+                        <article data-animate ="child-scale-in" key={i} className='px-3 py-5 border border-[#087ED5]/75 rounded-md flex flex-col items-center'>
                             <div className="flex items-center justify-center size-16 rounded-full bg-blue-600/20">
                                 <Image
                                     src={item.icon}
@@ -26,7 +26,7 @@ function WhyChooseUs() {
                                 />
                             </div>
 
-                            <h3 className=" text-base font-semibold text-white">
+                            <h3 className="my-2 leading-5 text-base text-center font-semibold text-white">
                                 {item.title}
                             </h3>
 

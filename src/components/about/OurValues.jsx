@@ -61,7 +61,7 @@ function OurValues() {
                 </div>
 
                 {/* Values Grid */}
-                <div className="mt-8 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-5 lg:gap-6">
+                <div className="mt-8 grid grid-cols-1 gap-6 md:gap-10 sm:grid-cols-2 lg:grid-cols-5 lg:gap-6">
                     {values.map((value, index) => {
                         const Icon = value.icon
 
@@ -96,12 +96,12 @@ function OurValues() {
                                 </div>
 
                                 {/* Title */}
-                                <h3 className="text-base font-inter font-semibold text-[#071B42] xl:mt-4">
+                                <h3 className="text-base my-2 font-inter font-semibold text-[#071B42] xl:mt-4">
                                     {value.title}
                                 </h3>
 
                                 {/* Description */}
-                                <p className="mt-2 font-inter leading-5 text-slate-600 xl:mx-auto">
+                                <p className=" font-inter leading-5 text-slate-600 xl:mx-auto">
                                     {value.description}
                                 </p>
                             </div>

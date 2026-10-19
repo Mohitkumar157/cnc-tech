@@ -5,6 +5,7 @@ import OurJourney from '@/components/about/OurJourney'
 import OurTeam from '@/components/about/OurTeam'
 import OurValues from '@/components/about/OurValues'
 import AboutUs from '@/components/home/AboutUs'
+import Video from '@/components/menufacturing-hub/Video'
 
 import React from 'react'
 
@@ -13,10 +14,11 @@ function page() {
     <section className=''>
       <AboutHero />
       <AboutUs />
-      <OurTeam />
+      {/* <OurTeam /> */}
      {/* <MissionAndVision />
      <OurJourney /> */}
      <OurValues />
+     <Video />
      <MenuFacturing />
     </section>
   )

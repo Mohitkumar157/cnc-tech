@@ -1,14 +1,14 @@
 import React from 'react'
 import SectionEyebrow from '../ui/SectionEyebrow'
 import SecondHeading from '../ui/SecondHeading'
-import { Check, MoveRight } from "lucide-react";
+import { Check } from "lucide-react";
 import PrimaryButton from '../ui/PrimaryButton';
 import Image from 'next/image';
 const features = [
-    "ISO Certified Company",
-    "Advanced Machinery & Technology",
-    "Skilled & Experienced Team",
-    "On-time Delivery & Quality Assurance",
+    "Established through Gupta Foundry in 1998.",
+    "Focused on specification-driven components.",
+    "Multiple Product Categories",
+    "Customer-Specific Production",
 ]
 
 function AboutUs() {
@@ -36,16 +36,16 @@ function AboutUs() {
                         <div className='overflow-hidden'>
                             <div>
                                 <SectionEyebrow
-                                    label="About CNC Tech"
+                                    label="ABOUT RG PRECISION INSTRUMENTS"
                                     align="left"
                                     className="ml-0.5 text-black"
                                 />
 
                                 <SecondHeading align="left">
-                                    Delivering Precision. <br />
+                                    EXPERIENCE BEHIND US.  <br />
 
                                     <span className="text-[#0778db]">
-                                        Building Trust.
+                                        PRECISION AHEAD.
                                     </span>
                                 </SecondHeading>
                             </div>
@@ -53,15 +53,13 @@ function AboutUs() {
 
                         <div className='overflow-hidden'>
                             <p data-animate="fade-up" className="my-4 font-inter leading-7 text-black">
-                                Established in 2008, CNC Tech is a leading manufacturer
-                                of <br className="hidden lg:block" />
-                                precision turned parts, machined components, molds, dies
-                                and <br className="hidden lg:block" />
-                                industrial solutions. We combine advanced technology,
-                                skilled <br className="hidden lg:block" />
-                                engineers and strict quality standards to deliver products
-                                that <br className="hidden lg:block" />
-                                exceed expectations.
+                                RG Precision Instruments is a manufacturing venture focused on precision components,
+                                metal manufacturing, moulding and CNC machining.
+                                Our manufacturing heritage dates back to Gupta
+                                Foundry, established in 1998.
+                                We focus on customer-specific manufacturing across Brass,
+                                Gunmetal, Aluminium, gears, pinions, CNC components, surgical
+                                components and microscope components.
                             </p>
                         </div>
 
@@ -89,6 +87,7 @@ function AboutUs() {
                                 <PrimaryButton
                                     btnText="Know More About Us"
                                     varient="primary"
+                                    href={"/about-us"}
                                 />
                             </div>
                         </div>
@@ -111,7 +110,7 @@ function AboutUs() {
 
                             <div className="relative aspect-[3/1.9] overflow-hidden rounded-xl">
                                 <Image
-                                data-animate="child-scale-in"
+                                    data-animate="child-scale-in"
                                     src="/home/cnc-machining-process.webp"
                                     alt="CNC machining process"
                                     fill
@@ -122,7 +121,7 @@ function AboutUs() {
 
                             <div className="relative aspect-[3/1.9] overflow-hidden rounded-xl">
                                 <Image
-                                data-animate="child-scale-in"
+                                    data-animate="child-scale-in"
                                     src="/home/cnc-precision-components.webp"
                                     alt="CNC precision machined components"
                                     fill

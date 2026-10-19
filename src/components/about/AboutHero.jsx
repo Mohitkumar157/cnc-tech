@@ -5,15 +5,16 @@ import PrimaryButton from '../ui/PrimaryButton'
 
 function AboutHero() {
   return (
-    <section className="w-full pt-25 bg-[#011D40]">
+    <section className="w-full pt-25 bg-[#011D40]  overflow-hidden">
       <div
-        className="relative flex items-center justify-start w-full h-[60vh] md:h-[70vh] lg:h-[50vw] overflow-hidden">
+        className="relative h-[60vh] md:h-[70vh] lg:h-[50vw] flex items-center justify-start w-full">
         {/* Hero Image */}
         <Image
           src="/about/aboutHero.webp"
-          width={2120}
-          height={742}
+          fill
           priority
+          sizes="(min-width: 1425px) 1425px, 100vw"
+          quality={75}
           alt="CNC Tech engineering team"
           className="
             absolute inset-0
@@ -49,20 +50,20 @@ function AboutHero() {
           <div className="">
 
             {/* Small Label */}
-            <SectionEyebrow label={"About CNC Tech"} align={"left"} className={"text-white"} />
+            <SectionEyebrow label={"ABOUT RG PRECISION INSTRUMENTS"} align={"left"} className={"text-white"} />
 
             {/* Heading */}
             <h1 className='uppercase text-[36px] md:text-[40px] lg:text-[70px] text-white font-inter leading-9 md:leading-9 lg:leading-16 tracking-[0.1px] font-extrabold'>
-              Building a  <br className='hidden md:block' />
-              <span className="text-[#078CFF]">
-               Legacy Precision <br className='hidden md:block'/> & Innovation
+              Building a  <br  />
+              <span className="text-[#0778db]">
+                Legacy Precision <br className='hidden md:block' /> & Innovation
               </span>
             </h1>
 
             {/* Description */}
             <p className="w-[80vw] sm:w-[80vw] md:w-full text-white my-4 font-inter tracking-[1.1px] text-[14px] md:text-[16px]">
-              We combine advanced CNC technology, precision engineering,<br />
-              and industry expertise to deliver reliable manufacturing <br />
+              We combine advanced RG precision engineering,<br className='hidden md:block' />
+              and industry expertise to deliver reliable manufacturing <br className='hidden md:block' />
               solutions that help businesses build better.
             </p>
 

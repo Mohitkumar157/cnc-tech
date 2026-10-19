@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { Quote, Star } from "lucide-react";
@@ -79,30 +79,22 @@ function TestimonialSlider() {
               key={review.id}
               className="min-w-0 shrink-0 grow-0 basis-full"
             >
-              <article>
+              <article className="">
 
-                <blockquote className="mt-4">
+                <blockquote className="mt-4 flex flex-col">
 
 
-                  <p className="relative pl-20 flex items-center justify-center max-w-xl text-base font-montserrat leading-6 text-slate-600">
+                  <p className="relative pl-16 flex items-center justify-center max-w-xl text-base font-montserrat leading-6 text-slate-600">
                     <Quote
                       aria-hidden="true"
-                      className="absolute left-0 top-0 size-15 fill-[#0878F9] text-[#0878F9] rotate-180"
+                      className="absolute left-0 top-0 size-12 fill-[#0878F9] text-[#0878F9] rotate-180"
                       strokeWidth={1.5}
                     /> 
                      “{review.review}”
                   </p>
 
-                  <div className="mt-6 flex items-center gap-4">
-                    <div className="relative size-20 shrink-0 overflow-hidden rounded-full bg-slate-100">
-                      <Image
-                        src={review.image}
-                        alt={review.alt}
-                        fill
-                        sizes="80px"
-                        className="object-cover"
-                      />
-                    </div>
+                  <div className=" mt-3 md:mt-6 flex items-center gap-4">
+                    
 
                     <div>
                       <cite className="not-italic">
@@ -140,7 +132,7 @@ function TestimonialSlider() {
 
       {/* Slider dots */}
       <div
-        className="mt-6 flex items-center gap-2"
+        className="mt-4 md:mt-6 flex items-center gap-2"
         aria-label="Select client review"
       >
         {scrollSnaps.map((_, index) => (

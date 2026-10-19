@@ -6,7 +6,7 @@ const processData = [
     id: 1,
     number: "01",
     title: "Inquiry",
-    description: "Understand your requirements",
+    description: "Understand your product and manufacturing requirements.",
   },
   {
     id: 2,
@@ -64,7 +64,7 @@ function OurProcess() {
 
           <SecondHeading
             id="process-heading"
-            children={"From Concept to Completion"}
+            children={"From Requirement To Completion"}
             className={"mt-2 text-[#071B42]"}
           />
         </div>
