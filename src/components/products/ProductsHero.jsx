@@ -7,7 +7,7 @@ import PrimaryButton from '../ui/PrimaryButton'
 
 function ProductsHero() {
   return (
-   <section className='relative flex items-center justify-center w-full h-[80vh] sm:h-[60vh]  md:h-[70vh] lg:h-[50vw] overflow-hidden'>
+   <section className='relative flex items-center justify-center w-full h-[60vh] md:h-[70vh] lg:h-[50vw] overflow-hidden'>
       <Image
         src="/products/product-hero.webp"
         alt="Precision CNC manufacturing"

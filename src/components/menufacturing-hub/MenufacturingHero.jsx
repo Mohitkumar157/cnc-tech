@@ -7,7 +7,7 @@ import HeroReveal from '@/animations/HeroReveal'
 
 function MenufacturingHero() {
   return (
-    <section className='relative flex items-center justify-center w-full h-[80vh] sm:h-[60vh]  md:h-[70vh] lg:h-[50vw] overflow-hidden'>
+    <section className='relative flex items-center justify-center w-full h-[60vh] md:h-[70vh] lg:h-[50vw] overflow-hidden'>
       <Image
         src="/menufacturing-hub/manufacturing-hub-hero-image.webp"
         alt="Precision CNC manufacturing"
