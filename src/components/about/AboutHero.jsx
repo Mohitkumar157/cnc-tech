@@ -5,9 +5,9 @@ import PrimaryButton from '../ui/PrimaryButton'
 
 function AboutHero() {
   return (
-    <section className="w-full pt-25 bg-[#011D40]  overflow-hidden">
+    <section className="w-full bg-[#011D40]  overflow-hidden">
       <div
-        className="relative h-[60vh] md:h-[70vh] lg:h-[50vw] flex items-center justify-start w-full">
+        className="relative pt-25 h-[60vh] md:h-[70vh] lg:h-[50vw] flex items-center justify-start w-full">
         {/* Hero Image */}
         <Image
           src="/about/aboutHero.webp"
