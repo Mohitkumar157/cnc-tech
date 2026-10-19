@@ -1,5 +1,6 @@
 import React from 'react'
 import PrimaryButton from '../ui/PrimaryButton';
+import Link from 'next/link';
 
 function QuoteRequestSection() {
     return (
@@ -39,15 +40,16 @@ function QuoteRequestSection() {
                      btnText={" Request a Custom Quote"}
                      varient={"primary"}
                      className={"px-6! py-2.5!"}
+                     href={"/contact"}
                      />
 
 
-                    <a href="#" className="inline-flex items-center justify-center px-6 py-2.5 bg-transparent border border-[#0066CC] text-[#0066CC] text-base font-semibold rounded-lg hover:bg-blue-50 transition-all duration-300 w-full sm:w-auto">
+                    <Link href="#" className="inline-flex w-fit items-center justify-center px-6.5 py-2.5 bg-transparent border border-[#0066CC] text-[#0066CC] text-base font-semibold rounded-lg hover:bg-blue-50 transition-all duration-300 ">
                         Download Catalog (PDF)
                         <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                         </svg>
-                    </a>
+                    </Link>
 
                 </div>
             </div>

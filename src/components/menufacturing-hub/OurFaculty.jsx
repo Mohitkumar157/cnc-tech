@@ -66,6 +66,7 @@ function OurFaculty() {
                                 btnText={"View Our Services"}
                                 varient={"primary"}
                                 className={"mt-5!"}
+                                href={"/services"}
                             />
                         </div>
                     </div>

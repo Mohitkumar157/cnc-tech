@@ -45,7 +45,7 @@ function ProductsHero() {
             stagger={0.035}
             className="uppercase text-[32px] md:text-[40px] lg:text-[70px] text-white font-inter leading-9 md:leading-9 lg:leading-15 tracking-[0.1px] font-extrabold"
           >
-            High Precision <br className='hidden md:block'/>
+            High Precision <br />
 
             <span className="text-[#0778db] leading-9 md:leading-9 lg:leading-16">
               Perfect Finish 
@@ -68,16 +68,18 @@ function ProductsHero() {
           <div className='overflow-hidden'>
             <div
               data-hero-reveal
-              className="flex flex-col sm:flex-row md:flex-row  md:items-center gap-5"
+              className="flex items-center gap-5"
             >
               <PrimaryButton
                 btnText="Get a Free Quote"
                 varient="primary"
+                href={"/contact"}
               />
 
               <PrimaryButton
                 btnText="Explore Products"
                 varient="secondry"
+                href={"/products"}
               />
             </div>
           </div>

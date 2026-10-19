@@ -58,7 +58,7 @@ function OurServices() {
   return (
     <section className='py-8 md:py-12 lg:py-16'>
       <div className="container px-4 md:px-0">
-        <SectionEyebrow label={"Our Services"} />
+        <SectionEyebrow label={"Our Services"} className={"text-[#0778db]"}/>
         <SecondHeading children={"What We Offer"} />
         <p className='text-center mt-2 font-inter'>
           Explore our range of CNC machining and

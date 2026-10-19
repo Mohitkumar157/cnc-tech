@@ -4,7 +4,7 @@ import Link from 'next/link';
 function PrimaryButton({ btnText, varient, href, className }) {
   return (
     <Link
-    href={href ? href : ""}
+    href={href ? href : "#"}
       className={`
     group cursor-pointer w-fit flex items-center justify-center gap-4
     lg:px-4 md:px-3 lg:py-2.5 py-2 px-3 rounded-lg

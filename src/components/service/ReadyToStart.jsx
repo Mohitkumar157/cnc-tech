@@ -40,6 +40,7 @@ function ReadyToStart() {
                 <PrimaryButton 
                 btnText={" Contact Us"}
                 varient={"primary"}
+                href={"/contact"}
                 />
 
             </div>

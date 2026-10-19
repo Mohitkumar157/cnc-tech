@@ -67,16 +67,18 @@ function MenufacturingHero() {
           <div className='overflow-hidden'>
             <div
               data-hero-reveal
-              className="flex flex-col sm:flex-row md:flex-row  md:items-center gap-5"
+              className="flex items-center gap-5"
             >
               <PrimaryButton
                 btnText="Get a Free Quote"
                 varient="primary"
+                href={"/contact"}
               />
 
               <PrimaryButton
                 btnText="Explore Products"
                 varient="secondry"
+                href={"/products"}
               />
             </div>
           </div>
@@ -87,4 +89,4 @@ function MenufacturingHero() {
   )
 }
 
-export default MenufacturingHero
+export default MenufacturingHero;

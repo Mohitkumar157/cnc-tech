@@ -20,10 +20,10 @@ const quickLinks = [
 const services = [
   { label: "CNC Turning", href: "/services/cnc-turning" },
   { label: "VMC Machining", href: "/services/vmc-machining" },
-  { label: "Mold & Die Manufacturing", href: "/services/mold-die-manufacturing" },
-  { label: "Sheet Metal Fabrication", href: "/services/sheet-metal-fabrication" },
-  { label: "Precision Components", href: "/services/precision-components" },
-  { label: "CAD / CAM Design", href: "/services/cad-cam-design" },
+  { label: "Mold & Die Manufacturing", href: "/services" },
+  { label: "Sheet Metal Fabrication", href: "/services" },
+  { label: "Precision Components", href: "/services" },
+  { label: "CAD / CAM Design", href: "/services" },
 ];
 
 const socialLinks = [

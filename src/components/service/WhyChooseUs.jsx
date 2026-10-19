@@ -63,6 +63,7 @@ function WhyChooseUs() {
                         <PrimaryButton
                             btnText={"Learn More About Us"}
                             varient="primary"
+                            href={"/about-us"}
                         />
                     </div>
                 </div>

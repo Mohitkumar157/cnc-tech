@@ -79,11 +79,13 @@ function ServiceHero() {
               <PrimaryButton
                 btnText="Get a Free Quote"
                 varient="primary"
+                href={"/contact"}
               />
 
               <PrimaryButton
                 btnText="Explore Products"
                 varient="secondry"
+                href={"/products"}
               />
             </div>
           </div>

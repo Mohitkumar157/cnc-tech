@@ -204,7 +204,11 @@ const OurProducts = () => {
 
         {/* CTA */}
         <div className="flex justify-center">
-          <PrimaryButton btnText={"View All Products"} varient={"primary"} />
+          <PrimaryButton 
+          btnText={"View All Products"}
+           varient={"primary"} 
+           href={"/products"}
+           />
         </div>
       </div>
     </section>
