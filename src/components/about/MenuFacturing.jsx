@@ -60,18 +60,22 @@ function MenuFacturing() {
 
                         <div className='overflow-hidden'>
                             <p data-animate="fade-up" className='my-1 font-inter leading-6 text-black text-[14px] md:text-[16px]'>
-                                Our advanced infrastructure and skilled team enable us to
-                                deliver high-precision components with consistency and efficiency.
+                                Our advanced manufacturing infrastructure, precision-focused processes, 
+                                and skilled technical team enable us to deliver high-quality, 
+                                precision-engineered components with exceptional accuracy, 
+                                consistent quality, and operational efficiency. We are committed to 
+                                meeting diverse industry requirements through reliable manufacturing 
+                                solutions, attention to detail, and a strong focus on customer satisfaction.
                             </p>
                         </div>
 
-                        <div className='flex flex-col gap-2'>
+                        <div className='flex flex-col gap-3'>
                             {
                                 items.map((itm) => (
                                     <div key={itm.id} className='overflow-hidden'>
                                         <div 
                                         data-animate="fade-up" 
-                                        className=' md:min-h-22.5 h-auto flex bg-white rounded-md overflow-hidden py-2 lg:py-1 items-center gap-4'>
+                                        className='h-auto flex bg-white rounded-md overflow-hidden py-2 lg:py-1 items-center gap-4'>
                                         <div className='icon'>
                                             {itm.icon}
                                         </div>

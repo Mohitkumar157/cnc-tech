@@ -75,9 +75,9 @@ function OurValues() {
                                 <div
                                     key={index}
                                     className="
-                  group text-center
+                  group text-center bg-gray-200
                   rounded-2xl
-                   py-7
+                   py-6 px-4
                   transition-all duration-300
                   hover:-translate-y-1
                 "

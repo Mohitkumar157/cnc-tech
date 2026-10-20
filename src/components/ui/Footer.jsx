@@ -5,15 +5,15 @@ import {
   Mail,
   MapPin,
   Phone,
-  Youtube,
 } from "lucide-react";
+import WhatsAppButton from "./WhatsAppButton";
 
 const quickLinks = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about-us" },
   { label: "Services", href: "/services" },
   { label: "Products", href: "/products" },
-  { label : "Manufacturing Hub", href : "/manufacturing-hub"},
+  { label: "Manufacturing Hub", href: "/manufacturing-hub" },
   { label: "Contact Us", href: "/contact-us" },
 ];
 
@@ -51,8 +51,10 @@ const socialLinks = [
 
 function Footer() {
   return (
-    <footer className="bg-[#011D40] font-inter text-white">
+    <footer className="relative bg-[#011D40] font-inter text-white">
       <div className="container px-4 xl:px-0">
+        {/* Whatsapp logo */}
+        <WhatsAppButton />
         <div className="grid gap-10 py-10 sm:grid-cols-2 lg:grid-cols-[1.15fr_0.7fr_1fr_1.25fr_1.1fr] lg:gap-8 lg:py-12">
           {/* Company information */}
           <section aria-labelledby="footer-company-heading">
