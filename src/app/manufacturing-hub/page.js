@@ -13,7 +13,7 @@ function page() {
        <OurFaculty />
        <MachineryTechnologies />
        <QualityAssourance />
-       <Video />
+       <div className='pb-8 md:pb-12 lg:pb-16'><Video /></div>
        <QuoteRequestSection />
     </section>
   )
