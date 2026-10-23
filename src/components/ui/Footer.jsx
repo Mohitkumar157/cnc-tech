@@ -91,7 +91,7 @@ function Footer() {
                       width={label === "Facebook" ? 9 : 15}
                       height={label === "Facebook" ? 9 : 15}
                       alt={label}
-                      className="object-cover" />
+                      className="object-cover w-auto h-auto" />
                   </a>
                 </li>
               ))}

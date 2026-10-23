@@ -38,7 +38,7 @@ function MenuFacturing() {
                     <div className='col-span-12 lg:col-span-6 relative aspect-3/2 md:aspect-650/565 rounded-xl md:rounded-2xl overflow-hidden'>
                         <Image
                             data-animate="child-scale-image"
-                            src={"/about/about-us-image.jfif"}
+                            src={"/about/about-us-image.webp"}
                             width={600}
                             height={477}
                             className='w-full h-full object-cover md:object-center object-top'
