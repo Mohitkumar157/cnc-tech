@@ -14,7 +14,7 @@ export default function WhatsAppButton() {
       href={whatsappURL}
       target="_blank"
       rel="noopener noreferrer"
-      className="whatsapp-float"
+      className="whatsapp-float absolute bottom-[50%] md:top-1 right-4"
       aria-label="Chat with us on WhatsApp"
     >
       <span className="whatsapp-ring ring-one"></span>

@@ -55,7 +55,7 @@ function Footer() {
       <div className="container px-4 xl:px-0">
         {/* Whatsapp logo */}
         <WhatsAppButton />
-        <div className="grid gap-10 py-10 sm:grid-cols-2 lg:grid-cols-[1.15fr_0.7fr_1fr_1.25fr_1.1fr] lg:gap-8 lg:py-12">
+        <div className="grid gap-10 py-8 md:py-12 lg:py-16 sm:grid-cols-2 lg:grid-cols-[1.15fr_0.7fr_1fr_1.25fr_1.1fr] lg:gap-8">
           {/* Company information */}
           <section aria-labelledby="footer-company-heading">
             <h2 id="footer-company-heading" className="sr-only">
@@ -163,9 +163,7 @@ function Footer() {
                   />
 
                   <span className="text-sm leading-6 text-slate-300">
-                    Plot No. 321, Industrial Area,
-                    <br />
-                    Ambattur, Chennai – 600058
+                    AMBALA HARYANA, INDIA – 133001
                   </span>
                 </li>
 
@@ -193,7 +191,7 @@ function Footer() {
                       className="size-5 shrink-0 text-[#078CFF]"
                       strokeWidth={1.8}
                     />
-                    info@cnctech.co.in
+                    rgprecisioninstruments@gmail.com
                   </a>
                 </li>
 
@@ -222,9 +220,10 @@ function Footer() {
             </h2>
 
             <div className="mt-4 overflow-hidden rounded-md border border-white/15">
+
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d14018.445229303476!2d77.55047730000001!3d28.551400649999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m5!1s0x390ceb4e4770e023%3A0x3d9b9e01106cf495!2sDadri%2C%20Uttar%20Pradesh!3m2!1d28.552577199999998!2d77.55481!4m0!5e0!3m2!1sen!2sin!4v1789031228257!5m2!1sen!2sin"
-                title="CNC Tech location in Dadri, Uttar Pradesh"
+                src="https://www.google.com/maps?q=Ambala%20Haryana%20133001&output=embed"
+                title="RG precision instruments location in Ambala, Haryana"
                 loading="lazy"
                 allowFullScreen
                 referrerPolicy="strict-origin-when-cross-origin"

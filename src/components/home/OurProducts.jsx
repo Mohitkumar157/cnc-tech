@@ -156,7 +156,7 @@ const OurProducts = () => {
                       className="min-w-0 shrink-0 grow-0 basis-[85%] pl-4 sm:basis-1/2 md:basis-1/3 lg:basis-1/6"
                     >
                       <article className="group">
-                        <div className="relative aspect-[3/2.1] overflow-hidden rounded-lg bg-slate-100">
+                        <div className="relative aspect-square overflow-hidden rounded-lg bg-slate-100">
                           <Image
                             src={product.image}
                             alt={product.alt || product.title}

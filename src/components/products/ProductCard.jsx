@@ -9,7 +9,7 @@ function ProductCard({ cardData }) {
     return (
         <article className='bg-gray-200 rounded-xl overflow-hidden'>
             <div className='blog-card overflow-hidden group'>
-                <div className={`top relative overflow-hidden aspect-4/3`}>
+                <div className={`top relative overflow-hidden aspect-square`}>
                     <Image
                         src={cardData?.image}
                         alt='blog-image'
