@@ -4,8 +4,7 @@ import React from 'react'
 import { MoveRight } from 'lucide-react';
 
 function ProductCard({ cardData }) {
-    console.log("card data", cardData);
-
+   
     return (
         <article className='bg-gray-200 rounded-xl overflow-hidden'>
             <div className='blog-card overflow-hidden group'>
